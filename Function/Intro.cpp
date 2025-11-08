@@ -1,14 +1,17 @@
 #include<iostream>
 using namespace std;
-void introduce() {    //function Definition
-  cout <<"Hello Everyone !" << endl;
-  cout <<"My name is Jameel Ahmed ." <<endl;
-cout << "I am learning C++ programming ." <<endl;
-cout << "I love to use GitHub and share my code !" <<endl;
-  cout << "I am student of MUET SZAB Campus Khairpur!" <<endl;
-  cout << "My District is khairpur !" <<endl;
+
+void introduce(string name, string hobby, string campus, string district) {
+    cout << "Hello Everyone!" << endl;
+    cout << "My name is " << name << "." << endl;
+    cout << "I am learning C++ programming." << endl;
+    cout << "I love to use " << hobby << " and share my code!" << endl;
+    cout << "I am a student of " << campus << "!" << endl;
+    cout << "My District is " << district << "!" << endl;
 }
-int main() { 
-   introduce();   //calling the function 
-return 0;
+
+int main() {
+    introduce("Jameel Ahmed", "GitHub", "MUET SZAB Campus Khairpur", "Khairpur");
+    return 0;
 }
+
