@@ -5,6 +5,8 @@ void introduce() {    //function Definition
   cout <<"My name is Jameel Ahmed ." <<endl;
 cout << "I am learning C++ programming ." <<endl;
 cout << "I love to use GitHub and share my code !" <<endl;
+  cout << "I am student of MUET SZAB Campus Khairpur!" <<endl;
+  cout << "My District is khairpur !" <<endl;
 }
 int main() { 
    introduce();   //calling the function 
