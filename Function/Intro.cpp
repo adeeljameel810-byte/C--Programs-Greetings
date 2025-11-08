@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void introduce(string name, string hobby, string campus, string district) {
+void introduce(string name, string hobby, string campus, string district) {  //Function Definition Along With Parameters 
+                                                                            
     cout << "Hello Everyone!" << endl;
     cout << "My name is " << name << "." << endl;
     cout << "I am learning C++ programming." << endl;
@@ -11,7 +12,7 @@ void introduce(string name, string hobby, string campus, string district) {
 }
 
 int main() {
-    introduce("Jameel Ahmed", "GitHub", "MUET SZAB Campus Khairpur", "Khairpur");
+    introduce("Jameel Ahmed", "GitHub", "MUET SZAB Campus Khairpur", "Khairpur"); //Function Calling
     return 0;
 }
 
