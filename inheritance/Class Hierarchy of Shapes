@@ -1,0 +1,112 @@
+#include <iostream>
+using namespace std;
+
+/*
+    ============================================
+       BASE CLASS : Shape
+       - This class represents a general shape
+       - It has a function area(), which will be
+         overridden by derived classes.
+    ============================================
+*/
+class Shape {
+public:
+    // A general function for area
+    // Derived classes will override this function
+    virtual void area() {
+        cout << "Area of Shape cannot be calculated." << endl;
+    }
+};
+
+/*
+    ============================================
+       DERIVED CLASS : Circle
+       - Inherits from Shape
+       - Has radius
+       - Overrides area() to calculate circle area
+         Formula: π * r * r
+    ============================================
+*/
+class Circle : public Shape {
+private:
+    float radius;
+
+public:
+    // Constructor to set radius
+    Circle(float r) {
+        radius = r;
+    }
+
+    // Overriding area()
+    void area() override {
+        cout << "Area of Circle = " << 3.1416 * radius * radius << endl;
+    }
+};
+
+/*
+    ============================================
+       DERIVED CLASS : Rectangle
+       - Inherits from Shape
+       - Has length and width
+       - Overrides area() to calculate rectangle area
+         Formula: length * width
+    ============================================
+*/
+class Rectangle : public Shape {
+private:
+    float length, width;
+
+public:
+    Rectangle(float l, float w) {
+        length = l;
+        width = w;
+    }
+
+    void area() override {
+        cout << "Area of Rectangle = " << length * width << endl;
+    }
+};
+
+/*
+    ============================================
+       DERIVED CLASS : Triangle
+       - Inherits from Shape
+       - Has base and height
+       - Overrides area() to calculate triangle area
+         Formula: 1/2 * base * height
+    ============================================
+*/
+class Triangle : public Shape {
+private:
+    float base, height;
+
+public:
+    Triangle(float b, float h) {
+        base = b;
+        height = h;
+    }
+
+    void area() override {
+        cout << "Area of Triangle = " << 0.5 * base * height << endl;
+    }
+};
+
+
+int main() {
+
+    // Creating objects of each derived class
+    Circle c(5);         // radius = 5
+    Rectangle r(4, 6);   // length = 4, width = 6
+    Triangle t(3, 7);    // base = 3, height = 7
+
+    /*
+        Calling area() of each object.
+        Since area() is overridden in each class,
+        their own version will run.
+    */
+    c.area();
+    r.area();
+    t.area();
+
+    return 0;
+}
