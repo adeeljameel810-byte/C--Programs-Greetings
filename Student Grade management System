@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int marks[5];        // Array to store marks of 5 subjects
+    int total;
+    float percentage;
+    char grade;
+
+public:
+    // Function to take input from the user
+    void input() {
+        cout << "\nEnter student name: ";
+        cin >> name;
+
+        cout << "Enter marks of 5 subjects: ";
+        total = 0;
+
+        // Loop to read 5 subject marks and calculate total
+        for (int i = 0; i < 5; i++) {
+            cin >> marks[i];
+            total += marks[i];   // Adding each mark to total
+        }
+    }
+
+    // Function to calculate percentage and assign grade
+    void calculate() {
+        percentage = total / 5.0;   // Percentage formula
+
+        // Deciding grade based on percentage
+        if (percentage >= 80)
+            grade = 'A';
+        else if (percentage >= 60)
+            grade = 'B';
+        else if (percentage >= 40)
+            grade = 'C';
+        else
+            grade = 'F';   // If below 40, student fails
+    }
+
+    // Function to display final results of each student
+    void display() {
+        cout << "\nName: " << name;
+        cout << "\nPercentage: " << percentage;
+        cout << "\nGrade: " << grade << endl;
+    }
+};
+
+int main() {
+    Student s[5];   // Array for 5 students
+
+    // Input and calculation for 5 students
+    for (int i = 0; i < 5; i++) {
+        cout << "\n--- Student " << i + 1 << " ---\n";
+        s[i].input();
+        s[i].calculate();
+    }
+
+    // Displaying results for all students
+    cout << "\n========== RESULT ==========\n";
+    for (int i = 0; i < 5; i++) {
+        s[i].display();
+    }
+
+    return 0;
+}
