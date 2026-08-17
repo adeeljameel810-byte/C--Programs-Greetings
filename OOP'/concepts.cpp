@@ -69,7 +69,7 @@ int main() {
 
     // Creating objects (constructors will be called automatically)
     Student s1("Jameel", 20, "Software Engineering");
-    Student s2("Mubeen", 19, "Civil Engineering");
+    Student s2("Adeeb", 19, "Civil Engineering");
 
     cout << endl;
 
