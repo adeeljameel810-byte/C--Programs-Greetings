@@ -3,7 +3,7 @@
 using namespace std;
 
 string birthYear(string name, int age) {
-    int currentYear = 2025; // current year
+    int currentYear = 2026; // current year
     int birthYear = currentYear - age;
     return name + ", you were born in " + to_string(birthYear);
 }
