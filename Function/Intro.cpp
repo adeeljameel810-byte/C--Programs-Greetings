@@ -12,7 +12,7 @@ void introduce(string name, string hobby, string campus, string district) {  //F
 }
 
 int main() {
-    introduce("Jameel Ahmed", "GitHub", "MUET SZAB Campus Khairpur", "Khairpur"); //Function Calling
+    introduce("Jameel Ahmed Khuhro", "GitHub", "MUET SZAB Campus Khairpur", "Khairpur"); //Function Calling
     return 0;
 }
 
