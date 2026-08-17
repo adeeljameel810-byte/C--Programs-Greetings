@@ -5,10 +5,10 @@ void introduce(string name, string hobby, string campus, string district) {  //F
                                                                             
     cout << "Hello Everyone!" << endl;
     cout << "My name is " << name << "." << endl;
-    cout << "I am learning C++ programming." << endl;
+    cout << "I am learning C++ Programming." << endl;
     cout << "I love to use " << hobby << " and share my code!" << endl;
     cout << "I am a student of " << campus << "!" << endl;
-    cout << "My District is " << district << "!" << endl;
+    cout << "My District is " << District << "!" << endl;
 }
 
 int main() {
