@@ -4,7 +4,7 @@ Welcome to my **C++ learning journey**! 💻✨
 This repository will contain all the **codes I will write while learning C++ from scratch to advanced**. I will follow the **YouTube playlist "Apna College"** and will practice everything hands-on.  
 
 ### 📖 My Programming Journey
-I started learning programming when I am  in **University Life** 🏫, and **C++ is  my first programming language**. I will complete the **Apna College playlist**, which will help me  in building a strong foundation in programming concepts.  
+I started learning programming when I am  in **University Life** 🏫, and **C++ is  my first programming language**. I will complete the **College Wala playlist**, which will help me  in building a strong foundation in programming concepts.  
 
  when I joined **Mehran University of Engineering and Technology** 🏛️ in the **Software Engineering department**, I started learning **C++ ** because my **first-year, first-semester subject,  Programming Fundamentals**, focuses on C++. This has given me a chance to **learn  concepts and strengthen my foundation**  more and more.  
 
