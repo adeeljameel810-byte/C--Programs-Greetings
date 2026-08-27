@@ -1,76 +1,91 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
-int main(){
-    /*Loops in C++:
-    There are three types of loops in C++:
-    1. For loops
-    2. While loop
-    3. do-while loop
+
+int main()
+{
+    /*
+        Loops in C++
+
+        There are three types of loops in C++:
+        1. for loop
+        2. while loop
+        3. do-while loop
     */
 
-    /*For loop in C++*/
-    // int i=1;
-    // cout<<i;
-    // i++;
+    // --------------------------------------------------
+    // 1. FOR LOOP
+    // --------------------------------------------------
 
-    // Syntex for "for loop"
-    // for(initialization; condition; updation )
-    // {
-    //     loop body (c++ code);
-    // }
+    /*
+        Syntax:
 
+        for (initialization; condition; update)
+        {
+            // loop body
+        }
+    */
 
-    // for (int i = 0; i <= 40; i++)
-    // {
-    //     /* code */
-    //      cout<<i<<endl;
-    // }
+    // Example: Print numbers from 1 to 40
+    cout << "For Loop:" << endl;
 
-    // Example of infinite for loop
-    // for (int i = 0; 34 <= 40; i++)
-    // {
-    //     /* code */
-    //      cout<<i<<endl;
-    // }
-
-    /*While For loop in C++*/
-    // Syntex:
-    // While(condition)
-    // {
-    //     C++ statements;
-    // }
-
-// Printing 1 to 40 using while loop 
-// int i =1;
-// while(i<=40){
-//     cout<<i<<endl;
-//     i++;
-// }
+    for (int i = 1; i <= 40; i++)
+    {
+        cout << i << endl;
+    }
 
 
- // Example of infinite while loop
-//  int i=1;
-// while(true){
-//     cout<<i<<endl;
-//     i++;
-// }
+    // --------------------------------------------------
+    // 2. WHILE LOOP
+    // --------------------------------------------------
 
-/*do While For loop in C++*/
-    // Syntex:
-    // Do
-    // {
-    //     C++ statements;
-    // }While(condition);
-    
-// Printing 1 to 40 using while loop 
-// int i =1;
-// do{
-//     cout<<i<<endl;
-//     i++;
-// }while(false);
+    /*
+        Syntax:
 
-    
-    
+        while (condition)
+        {
+            // loop body
+        }
+    */
+
+    // Example: Print numbers from 1 to 40
+    cout << "\nWhile Loop:" << endl;
+
+    int i = 1;
+
+    while (i <= 40)
+    {
+        cout << i << endl;
+        i++;
+    }
+
+
+    // --------------------------------------------------
+    // 3. DO-WHILE LOOP
+    // --------------------------------------------------
+
+    /*
+        Syntax:
+
+        do
+        {
+            // loop body
+        }
+        while (condition);
+    */
+
+    // Example: Print numbers from 1 to 40
+    cout << "\nDo-While Loop:" << endl;
+
+    i = 1;
+
+    do
+    {
+        cout << i << endl;
+        i++;
+    }
+    while (i <= 40);
+
+
     return 0;
 }
